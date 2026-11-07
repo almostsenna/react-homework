@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="560" viewBox="0 0 480 560" role="img" aria-label="Місце для особистого фото">
+  <rect width="480" height="560" rx="28" fill="#e8edf3"/>
+  <circle cx="240" cy="192" r="76" fill="#a8b8c8"/>
+  <path d="M95 440c0-92 64-152 145-152s145 60 145 152" fill="#a8b8c8"/>
+  <rect x="94" y="478" width="292" height="2" fill="#c3ced9"/>
+  <text x="240" y="517" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#52677c">Ваше фото</text>
+</svg>

@@ -1,0 +1,60 @@
+.restaurant-page { background: #f1eee7; }
+.restaurant-page .section-eyebrow { color: #8c692f; }
+.restaurant-card { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 28px; border: 1px solid #ded9ce; border-radius: 18px; padding: 18px; background: #fffdf9; }
+.restaurant-photo { min-width: 0; }
+.restaurant-photo img { display: block; width: 100%; height: 340px; object-fit: cover; border-radius: 10px; }
+.restaurant-photo figcaption { color: #84775f; font-size: 9px; line-height: 1.8; padding: 12px 3px 0; }
+.restaurant-info { padding: 12px 8px 12px 0; min-width: 0; }
+.restaurant-location { color: #91733f; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+.restaurant-info h2 { color: #3d3528; font-family: Georgia, serif; font-size: 36px; line-height: 1.3; margin-top: 12px; }
+.restaurant-description { color: #7b6f5e; font-size: 13px; line-height: 1.85; margin-top: 16px; }
+.restaurant-facts { margin-top: 24px; border-top: 1px solid #e7e0d4; padding-top: 22px; }
+.restaurant-facts > div + div { margin-top: 20px; }
+.restaurant-facts dt { color: #8b7d66; font-size: 10px; }
+.restaurant-facts dd { color: #514634; font-size: 13px; line-height: 1.8; margin-top: 5px; overflow-wrap: anywhere; }
+.restaurant-rating { display: flex; align-items: baseline; gap: 8px; }
+.restaurant-rating strong { font-size: 26px; }
+.restaurant-rating > span:last-child { color: #8b7d66; font-size: 13px; }
+.rating-star { color: #bd8b2e; font-size: 24px; }
+.rating-note { display: block; color: #8b7d66; font-size: 10px; margin-top: 3px; }
+.restaurant-source { color: #8a6e3c; font-size: 11px; margin-top: 24px; }
+
+.credentials-page { background: #eaf0f7; }
+.credentials-card { max-width: 610px; background: #fff; border: 1px solid #d3dfeb; border-radius: 18px; padding: 32px; }
+.credentials-step { color: #74899e; font-size: 10px; line-height: 1.7; letter-spacing: 1px; text-transform: uppercase; }
+.credentials-card h2 { font-size: 25px; line-height: 1.4; margin: 12px 0 28px; letter-spacing: -.6px; }
+.credentials-field + .credentials-field { margin-top: 24px; }
+.credentials-field label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 9px; }
+.credentials-field input { width: 100%; min-width: 0; border: 1px solid #cbd7e2; border-radius: 9px; background: #fcfdff; color: #203246; font: inherit; font-size: 14px; padding: 13px 14px; line-height: 1.5; }
+.credentials-field input:focus { outline: 3px solid #347cba30; border-color: #347cba; }
+.credentials-field input[aria-invalid="true"] { border-color: #b33d3d; }
+.password-input-row { display: flex; flex-direction: column; align-items: start; gap: 9px; }
+.credentials-page button { font-family: inherit; cursor: pointer; }
+.credentials-page button:focus-visible { outline: 3px solid #347cba; outline-offset: 4px; }
+.credentials-page .password-toggle { padding: 0; border: 0; background: transparent; color: #3476aa; font-size: 11px; line-height: 1.7; text-decoration: underline; text-underline-offset: 3px; }
+.credentials-primary { display: inline-flex; align-items: center; justify-content: center; border: 1px solid #244e73; background: #244e73; color: #fff; border-radius: 9px; padding: 12px 18px; font-size: 13px; line-height: 1.5; }
+.credentials-primary:hover { background: #1b3c59; }
+.credentials-field + .credentials-primary { margin-top: 30px; }
+.credentials-secondary { border: 1px solid #ccd8e3; background: #fff; color: #526b80; border-radius: 9px; padding: 12px 18px; font-size: 13px; line-height: 1.5; }
+.credentials-secondary:hover { background: #f0f5f9; }
+.credentials-note { color: #74899e; font-size: 11px; line-height: 1.8; margin-top: 18px; }
+.field-error { color: #b33d3d; font-size: 11px; line-height: 1.7; margin-top: 7px; }
+.saved-credentials > div + div { margin-top: 24px; padding-top: 22px; border-top: 1px solid #e2e9f0; }
+.saved-credentials dt { font-size: 11px; color: #74899e; }
+.saved-credentials dd { font-size: 16px; line-height: 1.8; margin-top: 8px; overflow-wrap: anywhere; }
+.saved-password { display: flex; flex-direction: column; align-items: start; gap: 8px; }
+.secret-value { max-width: 100%; font-family: Consolas, monospace; letter-spacing: 1px; overflow-wrap: anywhere; }
+.credentials-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+@media (max-width: 1150px) {
+  .restaurant-card { grid-template-columns: 1fr; }
+  .restaurant-photo img { height: 310px; }
+  .restaurant-info { padding: 8px; }
+}
+
+@media (max-width: 680px) {
+  .restaurant-card { padding: 12px; gap: 18px; }
+  .restaurant-photo img { height: 235px; }
+  .restaurant-info h2 { font-size: 32px; }
+  .credentials-card { padding: 24px 20px; }
+}

@@ -1,0 +1,71 @@
+.city-page {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #19334a;
+  background: #f4f3ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.city-page * { box-sizing: border-box; }
+.city-page { margin: 0; min-width: 320px; }
+.city-page a { color: inherit; text-underline-offset: 3px; }
+.city-page a:focus-visible { outline: 3px solid #d4a739; outline-offset: 4px; }
+.city-page h1, .city-page h2, .city-page h3, .city-page p, .city-page dl, .city-page dd { margin: 0; }
+.city-page { max-width: 1160px; margin: auto; padding: 0 32px; }
+.city-page .site-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 30px 0; font-size: 13px; }
+.city-page .brand { font-size: 21px; font-weight: 800; letter-spacing: -.7px; }
+.city-page .brand-dot { color: #c68e20; }
+.city-page .city-intro { color: #fff; background: #173f65; border-radius: 24px; padding: 48px; }
+.city-page .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.city-page .city-intro .eyebrow { color: #f1ce71; }
+.city-page h1 { margin-top: 12px; font-size: clamp(48px, 8vw, 86px); line-height: 1.1; letter-spacing: -3px; }
+.city-page .description { max-width: 660px; margin-top: 20px; color: #e1e8ef; font-size: 17px; line-height: 1.75; }
+.city-page .city-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; border-top: 1px solid #ffffff30; margin-top: 34px; padding-top: 26px; }
+.city-page dt { font-size: 12px; color: #d3e0ec; }
+.city-page dd { margin-top: 9px; font-size: 22px; font-weight: 700; }
+.city-page .date-note { margin-top: 20px; color: #c7d6e4; font-size: 11px; line-height: 1.6; }
+.city-page .landmarks { padding-top: 42px; }
+.city-page .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 18px; margin-bottom: 22px; }
+.city-page .section-heading .eyebrow { color: #677c8d; }
+.city-page h2 { margin-top: 8px; font-size: 27px; line-height: 1.3; letter-spacing: -.8px; }
+.city-page .count { flex-shrink: 0; color: #5b6e7f; font-size: 12px; }
+.city-page .landmark-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.city-page .landmark-card { overflow: hidden; border: 1px solid #e1e4e5; border-radius: 16px; background: #fff; }
+.city-page .landmark-image { display: block; width: 100%; height: 225px; object-fit: cover; }
+.city-page .water-tower { object-fit: contain; background: #d7e8f5; }
+.city-page .card-body { padding: 22px 20px; }
+.city-page h3 { font-size: 18px; line-height: 1.4; }
+.city-page .card-body > p { margin-top: 10px; font-size: 14px; line-height: 1.65; color: #576b7d; }
+.city-page .card-body .photo-credit { margin-top: 20px; font-size: 10px; line-height: 1.7; }
+.city-page .site-footer { padding: 28px 0; margin-top: 28px; color: #667b8d; border-top: 1px solid #dce1e4; font-size: 12px; }
+
+@media (max-width: 780px) {
+.city-page { padding: 0 20px; }
+.city-page .city-intro { padding: 32px; }
+.city-page .landmark-grid { grid-template-columns: 1fr; }
+.city-page .landmark-image { height: 300px; }
+.city-page .city-facts { gap: 16px; }
+.city-page dd { font-size: 18px; }
+}
+
+@media (max-width: 480px) {
+.city-page { padding: 0 16px; }
+.city-page .site-header { padding: 24px 0; font-size: 10px; gap: 10px; }
+.city-page .brand { font-size: 18px; }
+.city-page .city-intro { padding: 28px 24px; border-radius: 18px; }
+.city-page h1 { letter-spacing: -2px; }
+.city-page .description { font-size: 15px; }
+.city-page .city-facts { grid-template-columns: 1fr; gap: 18px; }
+.city-page .city-facts > div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.city-page dd { margin-top: 0; }
+.city-page h2 { font-size: 24px; }
+.city-page .section-heading { align-items: start; }
+.city-page .count { padding-top: 3px; }
+.city-page .landmark-image { height: 240px; }
+}
+
+.city-page { padding: 32px; border-radius: 22px; min-width: 0; }
+@media (max-width: 680px) {
+  .city-page { padding: 24px 18px; border-radius: 16px; }
+}
