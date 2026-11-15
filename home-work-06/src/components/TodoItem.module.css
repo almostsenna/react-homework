@@ -1,0 +1,134 @@
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 4px 12px;
+  padding: 11px 10px 11px 13px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--priority);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(45, 61, 50, 0.05);
+  transition: box-shadow 150ms ease;
+}
+
+.low {
+  --priority: #10b981;
+  --pill: #e5f6ee;
+  --pill-ink: #146346;
+}
+
+.normal {
+  --priority: #f59e0b;
+  --pill: #fdf1d8;
+  --pill-ink: #765006;
+}
+
+.high {
+  --priority: #ef4444;
+  --pill: #feeceb;
+  --pill-ink: #9e2d2a;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(45, 61, 50, 0.11);
+}
+
+.completed {
+  background: #f3f5f2;
+}
+
+.completed .text {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.overdue,
+.overdue:hover {
+  box-shadow: 0 0 0 1px #d34e4e;
+}
+
+.task {
+  grid-column: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.checkbox:focus-visible,
+.delete:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.text {
+  min-width: 0;
+  font-size: 0.94rem;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.meta {
+  grid-column: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 8px;
+  margin-left: 28px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.priority,
+.warning {
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.priority {
+  color: var(--pill-ink);
+  background: var(--pill);
+}
+
+.warning {
+  color: #912424;
+  background: #fbe4e4;
+}
+
+.delete {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  min-width: 36px;
+  min-height: 36px;
+  border: 0;
+  border-radius: 7px;
+  color: var(--muted);
+  background: #f5f7f4;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.delete:hover {
+  color: #951f22;
+  background: #fee5e5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .delete {
+    transition: none;
+  }
+}

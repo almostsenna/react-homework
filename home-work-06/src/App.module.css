@@ -1,0 +1,25 @@
+.page {
+  --ink: #243127;
+  --muted: #526457;
+  --accent: #2e6046;
+  --accent-dark: #204934;
+  --line: #dce5dc;
+  --focus: #347c56;
+
+  min-height: 100vh;
+  padding: clamp(16px, 5vw, 54px);
+  color: var(--ink);
+  background: radial-gradient(ellipse at top, #e3ebdd 0%, #f6f4ea 76%);
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: clamp(16px, 4vw, 34px);
+  border: 1px solid #e3e8de;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 16px 42px rgba(50, 69, 56, 0.10);
+}

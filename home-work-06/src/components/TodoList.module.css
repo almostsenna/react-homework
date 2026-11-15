@@ -1,0 +1,55 @@
+.section {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.toolbar,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolbar {
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.heading {
+  font-size: 1.12rem;
+  font-weight: 740;
+}
+
+.control {
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.control:hover {
+  background: #edf5ed;
+}
+
+.control:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.list {
+  display: grid;
+  gap: 9px;
+  list-style: none;
+}
+
+.empty {
+  padding: 22px 12px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  color: var(--muted);
+  text-align: center;
+}

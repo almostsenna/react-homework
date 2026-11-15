@@ -1,0 +1,94 @@
+.form {
+  display: grid;
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.42fr) auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.field {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.83rem;
+  font-weight: 650;
+}
+
+.input,
+.add {
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  color: var(--ink);
+  background: #fafcf9;
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+
+.input:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.input::placeholder {
+  color: #657568;
+}
+
+.add {
+  padding: 8px 15px;
+  border-color: transparent;
+  color: #fff;
+  background: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.add:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.add:active {
+  transform: translateY(0);
+}
+
+.add:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .controls {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  }
+
+  .add {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 460px) {
+  .controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .add {
+    transition: none;
+  }
+}
